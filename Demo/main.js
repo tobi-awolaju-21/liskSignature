@@ -1,4 +1,4 @@
-import { api_key, storage_directory, captureframe } from '../SDK/ls.js';
+import { api_key, storage_directory, captureframe } from './ls.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const apiKey = "your_api_key_here";
