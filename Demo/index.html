@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Frame Capture</title>
+  <style>
+ .camera-stream {
+  width: 100vw;  /* Use viewport width for full screen */
+  height: 100vh; /* Use viewport height for full screen */
+  object-fit: cover;  /* Maintain aspect ratio and fill container */
+  position: fixed;  /* Fix the video to the viewport */
+  top: 0;  /* Position at top */
+  left: 0; /* Position at left */
+  z-index: -1;  /* Place video behind other elements (optional) */
+}
+
+
+.captureButton {
+  border-radius: 100px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.423);
+  color: aliceblue;
+  position: fixed;
+  bottom: 20px; /* Adjust vertical position as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  padding: 15px 30px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer; /* Indicate clickable button */
+}
+  </style>
+</head>
+<body>
+ 
+    <video class ="camera-stream" id="camera-stream" autoplay></video>
+     <button class="captureButton" id="captureButton">Capture Frame</button>
+     <script type="module" src="main.js"></script>
+
+    </body>
+</html>
+
+
